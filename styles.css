@@ -1,0 +1,382 @@
+@font-face {
+    font-family: "Prata";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/assets/Prata-Regular.woff2") format("woff2"),
+         url("/assets/Prata-Regular.ttf") format("ttf")
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    background-color: #222;
+    color: #fff;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.header.scrolled {
+    position: fixed;
+    background-color: #232323cc;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 205px;
+    padding: 44px 0;
+    max-height: 88px;
+}
+
+.nav-tagline {
+    display: flex;
+    gap: 29px;
+    list-style: none;
+}
+
+.nav-tagline li {
+    font-size: 16px;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.first-screen {
+    display: flex;
+    height: 100vh;
+    position: relative;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 60%;
+    padding: 182px 0 50px 162px;
+    z-index: 1;
+    position: relative;
+}
+
+.logo {
+    font-family: 'Prata', serif;
+    font-size: 36px;
+    font-weight: inherit;
+    text-transform: uppercase;
+    padding-inline-start: 162px;
+    margin: 0;
+}
+
+.title {
+    font-family: 'Prata', serif;
+    font-size: 80px;
+    font-weight: inherit;
+    line-height: 96px;
+    margin: 0;
+    line-height: 96px;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: inherit;
+    margin: 0;
+    padding: 25px 0 64px;
+}
+
+.price-list, .description-list {
+    list-style: none;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 37.5px;
+    padding: 0 0 40px 0;
+    margin: 0;
+}
+
+.description-list {
+    padding: 0 0 80px 0;
+    margin: 0;
+}
+
+.description-list li {
+    display: flex;
+    align-items: center;
+    line-height: 33.6px;
+    gap: 20px;
+    padding-block-end: 40px;
+    border-block-end: 1px #55565A solid;
+}
+
+.description-list li:last-child {
+    padding: 0;
+    border: none;
+}
+
+.check-icon {
+    width: 39px;
+    height: 37px;
+    margin-right: 17px;
+}
+
+.check-icon__second {
+    width: 58px;
+    height: 47px;
+}
+
+.price {
+    font-family: 'Prata', serif;
+    font-size: 40px;
+}
+
+.order-button {
+    width: 191px;
+    height: 96px;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: white;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.order-button__second {
+    width: 100%;
+    height: 78px;
+}
+
+.screen-image {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.second-screen {
+    background-color: #282829;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.side-image {
+    height: 100%;
+    object-fit: cover;
+}
+
+.center-content {
+    width: 33%;
+}
+
+.third-screen {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 150px;
+}
+
+.form-container {
+    width: 100%;
+    height: 628px;
+    background-color: #fff;
+    position: relative;
+    border-radius: 24px;
+    padding-inline: 150px;
+}
+
+.contact-form {
+    width: 55%;
+}
+
+.form-title {
+    font-family: 'Prata', serif;
+    font-size: 54px;
+    color: #38535D;
+}
+
+form input,
+form button {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px #D6D6D6 solid;
+}
+
+form input::placeholder {
+    color: #55565A;
+    font-size: 24px;
+    font-weight: 100;
+}
+
+form label {
+    color: #55565A;
+    font-size: 19px;
+}
+
+form input[type="checkbox"] {
+    width: auto;
+}
+
+form button {
+    font-size: 24px;
+    width: 104%;
+    color: #fff;
+    background-color: #282829;
+    border: 1px solid #ccc;
+    text-transform: uppercase;
+    margin-block-start: 26px;
+}
+
+.form-image {
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    left: 477px;
+}
+
+.form-image2 {
+    position: absolute;
+    object-fit: contain;
+    top: -130px;
+    left: 910px;
+}
+
+.center-text {
+    display: flex;
+    justify-content: center;
+    border-block: 2px #D5C9BE solid;
+}
+
+.center-text span {
+    padding-block: 40px;
+    margin: 0 15px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 52px 183px 38px 0;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.menu ul li {
+    margin: 0 10px;
+    font-size: 20px;
+    color: #D5C9BE;
+}
+
+.rights {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 183px 38px 162px;
+}
+
+/* Существующие стили остаются без изменений */
+
+/* Адаптивность */
+@media (max-width: 1024px) {
+    .header-content {
+        gap: 50px;
+        padding: 20px 0;
+    }
+    .logo {
+        padding-inline-start: 20px;
+        font-size: 28px;
+    }
+    .nav-tagline {
+        gap: 15px;
+        font-size: 14px;
+    }
+    .text-content {
+        padding: 100px 20px 30px;
+        width: 100%;
+    }
+    .title {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    .screen-image {
+        display: none;
+    }
+    .second-screen {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 20px;
+    }
+    .center-content {
+        width: 100%;
+    }
+    .third-screen {
+        padding: 50px 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .form-container {
+        padding: 50px 20px;
+        height: auto;
+    }
+    .contact-form {
+        width: 100%;
+    }
+    .form-title {
+        font-size: 36px;
+    }
+    .form-image, .form-image2 {
+        display: none;
+    }
+    .menu, .rights {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .text-content {
+        padding: 50px 10px;
+    }
+    .title {
+        font-size: 36px;
+        line-height: 42px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    .price-list, .description-list {
+        font-size: 18px;
+    }
+    .order-button {
+        width: 100%;
+        height: 60px;
+        font-size: 18px;
+    }
+    .form-title {
+        font-size: 28px;
+    }
+    form input::placeholder {
+        font-size: 18px;
+    }
+}
